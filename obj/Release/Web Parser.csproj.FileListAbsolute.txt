@@ -1,0 +1,9 @@
+D:\Projects\Code\C#\Web Parser\bin\Release\Web Parser.exe.config
+D:\Projects\Code\C#\Web Parser\bin\Release\Web Parser.exe
+D:\Projects\Code\C#\Web Parser\bin\Release\Web Parser.pdb
+D:\Projects\Code\C#\Web Parser\obj\Release\Web_Parser.Form1.resources
+D:\Projects\Code\C#\Web Parser\obj\Release\Web_Parser.Properties.Resources.resources
+D:\Projects\Code\C#\Web Parser\obj\Release\Web Parser.csproj.GenerateResource.cache
+D:\Projects\Code\C#\Web Parser\obj\Release\Web Parser.csproj.CoreCompileInputs.cache
+D:\Projects\Code\C#\Web Parser\obj\Release\Web Parser.exe
+D:\Projects\Code\C#\Web Parser\obj\Release\Web Parser.pdb
