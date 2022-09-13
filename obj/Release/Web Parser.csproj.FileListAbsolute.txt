@@ -7,3 +7,8 @@ D:\Projects\Code\C#\Web Parser\obj\Release\Web Parser.csproj.GenerateResource.ca
 D:\Projects\Code\C#\Web Parser\obj\Release\Web Parser.csproj.CoreCompileInputs.cache
 D:\Projects\Code\C#\Web Parser\obj\Release\Web Parser.exe
 D:\Projects\Code\C#\Web Parser\obj\Release\Web Parser.pdb
+D:\Projects\Code\C#\Web Parser\bin\Release\Web Parser.exe.manifest
+D:\Projects\Code\C#\Web Parser\bin\Release\Web Parser.application
+D:\Projects\Code\C#\Web Parser\obj\Release\Web Parser.csproj.AssemblyReference.cache
+D:\Projects\Code\C#\Web Parser\obj\Release\Web Parser.exe.manifest
+D:\Projects\Code\C#\Web Parser\obj\Release\Web Parser.application
