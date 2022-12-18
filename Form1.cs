@@ -16,7 +16,7 @@ namespace Web_Parser
             core = new Core(Output);
 
             core.Notify += StatusTxt;
-            
+            encodingBox.SelectedIndex = 0;
         }
 
         private void StatusTxt(string s)
@@ -48,7 +48,14 @@ namespace Web_Parser
             }
         }
 
+        private void encodingBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            core.encoding = encodingBox.SelectedText;
+        }
 
-
+        private void checkBox_clear_CheckedChanged(object sender, EventArgs e)
+        {
+            core.isClear = checkBox_clear.Checked;
+        }
     }
 }

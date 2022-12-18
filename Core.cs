@@ -16,16 +16,22 @@ namespace Web_Parser
         public delegate void Status(string message);
         public event Status Notify;
 
+        RichTextBox output;
+        public string encoding = "utf-8";
+        public bool isClear = true;
+
+
         public Core(RichTextBox rtb)
         {
             output = rtb;
         }
 
-        RichTextBox output;
 
         public void Parse(string url, string el, string el2)
         {
-            output.Text = string.Empty;
+            if(isClear)
+              output.Text = string.Empty;
+            
             if (url.Length < 1)
             {
                 Notify?.Invoke("URL is empty!");
@@ -56,7 +62,7 @@ namespace Web_Parser
                 lines++;
             }
 
-            output.Text = result;
+            output.Text += result;
             Notify?.Invoke("DONE! Lines: " + lines);
 
         }
@@ -67,9 +73,17 @@ namespace Web_Parser
             {
                 WebRequest req = HttpWebRequest.Create(url);
                 req.Method = "GET";
+                req.ContentType = $"text/html; charset={encoding}";
+
+                Encoding responseEncode = Encoding.UTF8;
+                if(encoding.ToLower()=="ascii") 
+                    responseEncode = Encoding.ASCII;
+
+                if (encoding.ToLower() == "unicode")
+                    responseEncode = Encoding.Unicode;
 
                 string source = string.Empty;
-                using (StreamReader reader = new StreamReader(req.GetResponse().GetResponseStream()))
+                using (StreamReader reader = new StreamReader(req.GetResponse().GetResponseStream(), responseEncode))
                 {
                     source = reader.ReadToEnd();
                 }
